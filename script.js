@@ -1,6 +1,11 @@
 function myfun(){
+    
     let todo = document.querySelector(".task")
     let value = todo.value;
+    if(value==""){
+        alert("enter a valid task ");
+    }
+    else{
     let result = document.querySelector(".result")
     let a = document.createElement("p");
     a.className = "task"
@@ -14,4 +19,4 @@ function myfun(){
         result.removeChild(a)
     })
 
-}
+}}
